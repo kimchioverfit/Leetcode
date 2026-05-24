@@ -5,6 +5,8 @@
 
 <img src="../../imgs/Union_find-1.png" alt="Union_find-1" width="400"/>
 
+<img src="../../imgs/Union_find-2.png" alt="Union_find-2" width="400"/>
+
 ## 핵심 연산
 
 | 연산 | 설명 |
