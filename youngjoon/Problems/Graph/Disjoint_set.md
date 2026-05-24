@@ -5,6 +5,22 @@
 > Union-Find는 Disjoint Set을 구현하는 대표적인 자료구조.  
 > 구현 방법은 [Union-Find](Union-Find.md) 참고.
 
+## 동작 원리 예시
+
+```
+초기: {0} {1} {2} {3} {4}    각 노드가 독립된 집합
+      parent = [0, 1, 2, 3, 4]
+
+unite(0, 1):  parent[1] = 0  →  {0,1} {2} {3} {4}
+unite(1, 2):  find(1)=0, parent[2] = 0  →  {0,1,2} {3} {4}
+unite(3, 4):  parent[4] = 3  →  {0,1,2} {3,4}
+
+connected(0, 2)?  find(0)=0, find(2)=0  →  true  (같은 집합)
+connected(0, 3)?  find(0)=0, find(3)=3  →  false (다른 집합)
+```
+
+Union-Find 구현은 [Union-Find](Union-Find.md) 참고.
+
 ## 개념
 
 ```

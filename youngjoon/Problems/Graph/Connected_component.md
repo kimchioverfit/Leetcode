@@ -3,6 +3,38 @@
 그래프에서 서로 연결된 노드들의 집합.  
 **Undirected Graph** 에서는 단순 연결 여부, **Directed Graph** 에서는 SCC(강한 연결 요소)로 구분된다.
 
+## 동작 원리 예시
+
+<img src="../../../imgs/connected_component.svg" alt="Connected Component" width="520"/>
+
+5개 노드, 간선이 0-1, 1-2, 3-4인 그래프 (노드 2와 3 사이는 끊김):
+
+```
+0 — 1 — 2     3 — 4
+(컴포넌트 A)  (컴포넌트 B)
+```
+
+DFS로 컴포넌트 탐색 과정:
+
+```
+i=0: visited[0]=false → dfs(0) 시작
+     0 방문 → 1 방문 → 2 방문 → 더 갈 곳 없음
+     count++ → count=1
+
+i=1: visited[1]=true  → skip
+i=2: visited[2]=true  → skip
+
+i=3: visited[3]=false → dfs(3) 시작
+     3 방문 → 4 방문 → 더 갈 곳 없음
+     count++ → count=2
+
+i=4: visited[4]=true  → skip
+
+결과: 연결 요소 수 = 2
+```
+
+방문하지 않은 노드를 발견할 때마다 새로운 컴포넌트가 시작된다.
+
 ## 탐색 방법
 
 | 방법 | 설명 |

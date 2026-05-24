@@ -3,6 +3,14 @@
 DAG(방향 비순환 그래프)에서 노드를 **선후관계**에 맞게 일렬로 나열.  
 사이클이 있으면 위상 정렬 불가능.
 
+## 동작 원리 예시
+
+<img src="../../../imgs/topo_sort.svg" alt="Topological Sort" width="560"/>
+
+indegree가 0인 노드부터 Queue에 넣고, 처리할 때마다 이웃 노드의 indegree를 감소시킨다. indegree가 0이 된 노드를 새로 Queue에 추가하며 반복.
+
+---
+
 ## 알고리즘 종류
 
 | 방법 | 기반 | 특징 |

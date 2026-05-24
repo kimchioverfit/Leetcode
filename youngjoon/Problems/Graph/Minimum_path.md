@@ -1,5 +1,13 @@
 # Minimum Path (최단 경로)
 
+## 동작 원리 예시 (Dijkstra)
+
+<img src="../../../imgs/dijkstra_example.svg" alt="Dijkstra 동작 원리" width="560"/>
+
+A에서 시작해 우선순위 큐로 현재까지의 최소 거리 노드를 꺼내고, 이웃 노드의 거리를 갱신한다. 이미 확정된 노드는 skip(d > dist[u]).
+
+---
+
 ## 알고리즘 선택 기준
 
 | 알고리즘 | 가중치 | 음수 간선 | 음수 사이클 | 복잡도 |

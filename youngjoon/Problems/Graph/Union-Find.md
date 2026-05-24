@@ -7,6 +7,10 @@
 
 <img src="../../imgs/Union_find-2.png" alt="Union_find-2" width="400"/>
 
+## 동작 원리 예시
+
+<img src="../../../imgs/union_find_detail.svg" alt="Union-Find Path Compression" width="560"/>
+
 ## 핵심 연산
 
 | 연산 | 설명 |

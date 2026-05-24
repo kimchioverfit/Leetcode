@@ -3,6 +3,15 @@
 그래프 내에 순환 경로가 존재하는지 탐지한다.  
 **Directed / Undirected** 그래프에서 방법이 다르다.
 
+## 동작 원리 예시
+
+<img src="../../../imgs/cycle_detection.svg" alt="Cycle Detection" width="540"/>
+
+**Undirected**: DFS 중 이미 방문한 노드를 부모가 아닌 경로로 재방문 → 사이클  
+**Directed**: DFS 중 현재 재귀 스택(GRAY)에 있는 노드를 재방문 → 사이클
+
+---
+
 ## Undirected Graph
 
 DFS 탐색 중 이미 방문한 노드를 **부모가 아닌 경로로** 다시 만나면 사이클.
