@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="300" viewBox="0 0 520 300" role="img" aria-labelledby="title desc">
+  <title id="title">BFS example</title>
+  <desc id="desc">Breadth-first search visits nodes level by level using a queue.</desc>
+  <style>
+    .edge{stroke:#8a8f98;stroke-width:3}
+    .node{fill:#2563eb;stroke:#1e40af;stroke-width:3}
+    .active{fill:#f97316;stroke:#c2410c}
+    .text{font:700 18px Arial,sans-serif;fill:white;text-anchor:middle;dominant-baseline:central}
+    .label{font:600 16px Arial,sans-serif;fill:#1f2937;text-anchor:middle}
+    .small{font:14px Arial,sans-serif;fill:#4b5563;text-anchor:middle}
+  </style>
+  <rect width="520" height="300" fill="#fff"/>
+  <text x="260" y="28" class="label">BFS: visit by level</text>
+  <line x1="260" y1="75" x2="150" y2="145" class="edge"/>
+  <line x1="260" y1="75" x2="370" y2="145" class="edge"/>
+  <line x1="150" y1="145" x2="95" y2="220" class="edge"/>
+  <line x1="150" y1="145" x2="205" y2="220" class="edge"/>
+  <line x1="370" y1="145" x2="315" y2="220" class="edge"/>
+  <line x1="370" y1="145" x2="425" y2="220" class="edge"/>
+  <circle cx="260" cy="75" r="28" class="node active"/><text x="260" y="75" class="text">1</text>
+  <circle cx="150" cy="145" r="26" class="node"/><text x="150" y="145" class="text">2</text>
+  <circle cx="370" cy="145" r="26" class="node"/><text x="370" y="145" class="text">3</text>
+  <circle cx="95" cy="220" r="24" class="node"/><text x="95" y="220" class="text">4</text>
+  <circle cx="205" cy="220" r="24" class="node"/><text x="205" y="220" class="text">5</text>
+  <circle cx="315" cy="220" r="24" class="node"/><text x="315" y="220" class="text">6</text>
+  <circle cx="425" cy="220" r="24" class="node"/><text x="425" y="220" class="text">7</text>
+  <text x="260" y="275" class="small">Queue order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7</text>
+</svg>

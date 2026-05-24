@@ -2,7 +2,7 @@
 
 ## 동작 원리 예시 (Dijkstra)
 
-<img src="../../../imgs/dijkstra_example.svg" alt="Dijkstra 동작 원리" width="560"/>
+<img src="../../imgs/dijkstra_example.svg" alt="Dijkstra 동작 원리" width="560"/>
 
 A에서 시작해 우선순위 큐로 현재까지의 최소 거리 노드를 꺼내고, 이웃 노드의 거리를 갱신한다. 이미 확정된 노드는 skip(d > dist[u]).
 

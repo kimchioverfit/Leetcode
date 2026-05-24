@@ -5,7 +5,7 @@
 
 ## 동작 원리 예시
 
-<img src="../../../imgs/connected_component.svg" alt="Connected Component" width="520"/>
+<img src="../../imgs/connected_component.svg" alt="Connected Component" width="520"/>
 
 5개 노드, 간선이 0-1, 1-2, 3-4인 그래프 (노드 2와 3 사이는 끊김):
 

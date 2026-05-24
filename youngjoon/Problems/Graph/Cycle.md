@@ -5,7 +5,7 @@
 
 ## 동작 원리 예시
 
-<img src="../../../imgs/cycle_detection.svg" alt="Cycle Detection" width="540"/>
+<img src="../../imgs/cycle_detection.svg" alt="Cycle Detection" width="540"/>
 
 **Undirected**: DFS 중 이미 방문한 노드를 부모가 아닌 경로로 재방문 → 사이클  
 **Directed**: DFS 중 현재 재귀 스택(GRAY)에 있는 노드를 재방문 → 사이클

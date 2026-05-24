@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="320" viewBox="0 0 560 320" role="img" aria-labelledby="title desc">
+  <title id="title">Dijkstra example</title>
+  <desc id="desc">Weighted graph with a shortest path from A to E highlighted.</desc>
+  <style>
+    .edge{stroke:#9ca3af;stroke-width:3}
+    .short{stroke:#dc2626;stroke-width:5}
+    .node{fill:#2563eb;stroke:#1e40af;stroke-width:3}
+    .start{fill:#dc2626;stroke:#991b1b}
+    .txt{font:700 18px Arial,sans-serif;fill:white;text-anchor:middle;dominant-baseline:central}
+    .w{font:700 14px Arial,sans-serif;fill:#374151;text-anchor:middle}
+    .label{font:600 16px Arial,sans-serif;fill:#1f2937;text-anchor:middle}
+    .note{font:14px Arial,sans-serif;fill:#dc2626;text-anchor:middle}
+  </style>
+  <rect width="560" height="320" fill="#fff"/>
+  <text x="280" y="28" class="label">Dijkstra Shortest Path</text>
+  <line x1="90" y1="105" x2="215" y2="105" class="edge"/><text x="153" y="92" class="w">4</text>
+  <line x1="90" y1="105" x2="170" y2="215" class="short"/><text x="116" y="170" class="w">2</text>
+  <line x1="170" y1="215" x2="215" y2="105" class="short"/><text x="205" y="170" class="w">1</text>
+  <line x1="215" y1="105" x2="355" y2="105" class="edge"/><text x="285" y="92" class="w">5</text>
+  <line x1="170" y1="215" x2="355" y2="105" class="edge"/><text x="270" y="180" class="w">8</text>
+  <line x1="355" y1="105" x2="430" y2="225" class="short"/><text x="410" y="160" class="w">2</text>
+  <line x1="170" y1="215" x2="430" y2="225" class="edge"/><text x="300" y="240" class="w">10</text>
+  <circle cx="90" cy="105" r="28" class="start"/><text x="90" y="105" class="txt">A</text>
+  <circle cx="215" cy="105" r="28" class="node"/><text x="215" y="105" class="txt">B</text>
+  <circle cx="170" cy="215" r="28" class="node"/><text x="170" y="215" class="txt">C</text>
+  <circle cx="355" cy="105" r="28" class="node"/><text x="355" y="105" class="txt">D</text>
+  <circle cx="430" cy="225" r="28" class="node"/><text x="430" y="225" class="txt">E</text>
+  <text x="280" y="295" class="note">Highlighted path: A -> C -> B -> D -> E</text>
+</svg>

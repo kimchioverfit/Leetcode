@@ -11,7 +11,7 @@ Stack 또는 재귀를 사용한다.
 
 ## 동작 원리 예시
 
-<img src="../../../imgs/dfs_example.svg" alt="DFS 동작 원리" width="520"/>
+<img src="../../imgs/dfs_example.svg" alt="DFS 동작 원리" width="520"/>
 
 아래 그래프에서 노드 1부터 DFS 탐색 (인접 리스트: 1→[2,3], 2→[4,5], 3→[6]):
 

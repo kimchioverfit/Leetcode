@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" role="img" aria-labelledby="title desc">
+  <title id="title">Prim example</title>
+  <desc id="desc">Prim algorithm grows a minimum spanning tree from a start node.</desc>
+  <style>
+    .edge{stroke:#9ca3af;stroke-width:3}
+    .mst{stroke:#f97316;stroke-width:5}
+    .node{fill:#2563eb;stroke:#1e40af;stroke-width:3}
+    .tree{fill:#f97316;stroke:#c2410c}
+    .txt{font:700 18px Arial,sans-serif;fill:white;text-anchor:middle;dominant-baseline:central}
+    .w{font:700 14px Arial,sans-serif;fill:#374151;text-anchor:middle}
+    .label{font:600 16px Arial,sans-serif;fill:#1f2937;text-anchor:middle}
+    .note{font:14px Arial,sans-serif;fill:#c2410c;text-anchor:middle}
+  </style>
+  <rect width="560" height="300" fill="#fff"/>
+  <text x="280" y="28" class="label">Prim: grow one tree</text>
+  <line x1="120" y1="150" x2="240" y2="85" class="mst"/><text x="175" y="110" class="w">2</text>
+  <line x1="240" y1="85" x2="365" y2="110" class="mst"/><text x="305" y="88" class="w">3</text>
+  <line x1="365" y1="110" x2="430" y2="215" class="mst"/><text x="410" y="155" class="w">1</text>
+  <line x1="120" y1="150" x2="240" y2="225" class="edge"/><text x="175" y="205" class="w">6</text>
+  <line x1="240" y1="225" x2="430" y2="215" class="mst"/><text x="335" y="238" class="w">4</text>
+  <line x1="240" y1="85" x2="240" y2="225" class="edge"/><text x="258" y="160" class="w">7</text>
+  <circle cx="120" cy="150" r="28" class="tree"/><text x="120" y="150" class="txt">A</text>
+  <circle cx="240" cy="85" r="28" class="tree"/><text x="240" y="85" class="txt">B</text>
+  <circle cx="365" cy="110" r="28" class="tree"/><text x="365" y="110" class="txt">C</text>
+  <circle cx="240" cy="225" r="28" class="node"/><text x="240" y="225" class="txt">D</text>
+  <circle cx="430" cy="215" r="28" class="tree"/><text x="430" y="215" class="txt">E</text>
+  <text x="280" y="275" class="note">At each step, pick the cheapest edge leaving the tree</text>
+</svg>

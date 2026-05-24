@@ -11,7 +11,7 @@ Queue를 사용하며, **최단 경로** 탐색에 적합하다.
 
 ## 동작 원리 예시
 
-<img src="../../../imgs/bfs_example.svg" alt="BFS 동작 원리" width="520"/>
+<img src="../../imgs/bfs_example.svg" alt="BFS 동작 원리" width="520"/>
 
 아래 그래프에서 노드 1부터 BFS 탐색:
 

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" role="img" aria-labelledby="title desc">
+  <title id="title">Topological sort</title>
+  <desc id="desc">A directed acyclic graph arranged in topological order.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#6b7280"/>
+    </marker>
+  </defs>
+  <style>
+    .edge{stroke:#6b7280;stroke-width:3;marker-end:url(#arrow)}
+    .node{fill:#2563eb;stroke:#1e40af;stroke-width:3}
+    .ready{fill:#16a34a;stroke:#166534}
+    .txt{font:700 18px Arial,sans-serif;fill:white;text-anchor:middle;dominant-baseline:central}
+    .label{font:600 16px Arial,sans-serif;fill:#1f2937;text-anchor:middle}
+    .note{font:14px Arial,sans-serif;fill:#4b5563;text-anchor:middle}
+  </style>
+  <rect width="560" height="300" fill="#fff"/>
+  <text x="280" y="28" class="label">Topological Sort</text>
+  <line x1="105" y1="100" x2="220" y2="90" class="edge"/>
+  <line x1="105" y1="190" x2="220" y2="90" class="edge"/>
+  <line x1="105" y1="190" x2="220" y2="205" class="edge"/>
+  <line x1="250" y1="90" x2="370" y2="145" class="edge"/>
+  <line x1="250" y1="205" x2="370" y2="145" class="edge"/>
+  <line x1="400" y1="145" x2="485" y2="145" class="edge"/>
+  <circle cx="80" cy="100" r="28" class="ready"/><text x="80" y="100" class="txt">A</text>
+  <circle cx="80" cy="190" r="28" class="ready"/><text x="80" y="190" class="txt">B</text>
+  <circle cx="245" cy="90" r="28" class="node"/><text x="245" y="90" class="txt">C</text>
+  <circle cx="245" cy="205" r="28" class="node"/><text x="245" y="205" class="txt">D</text>
+  <circle cx="395" cy="145" r="28" class="node"/><text x="395" y="145" class="txt">E</text>
+  <circle cx="500" cy="145" r="28" class="node"/><text x="500" y="145" class="txt">F</text>
+  <text x="280" y="270" class="note">One valid order: A, B, C, D, E, F</text>
+</svg>

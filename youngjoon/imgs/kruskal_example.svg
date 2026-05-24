@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" role="img" aria-labelledby="title desc">
+  <title id="title">Kruskal example</title>
+  <desc id="desc">Minimum spanning tree edges selected by Kruskal algorithm.</desc>
+  <style>
+    .edge{stroke:#9ca3af;stroke-width:3}
+    .mst{stroke:#16a34a;stroke-width:5}
+    .node{fill:#2563eb;stroke:#1e40af;stroke-width:3}
+    .txt{font:700 18px Arial,sans-serif;fill:white;text-anchor:middle;dominant-baseline:central}
+    .w{font:700 14px Arial,sans-serif;fill:#374151;text-anchor:middle}
+    .label{font:600 16px Arial,sans-serif;fill:#1f2937;text-anchor:middle}
+    .note{font:14px Arial,sans-serif;fill:#16a34a;text-anchor:middle}
+  </style>
+  <rect width="560" height="300" fill="#fff"/>
+  <text x="280" y="28" class="label">Kruskal: choose light edges without cycles</text>
+  <line x1="110" y1="90" x2="240" y2="80" class="mst"/><text x="175" y="70" class="w">1</text>
+  <line x1="240" y1="80" x2="360" y2="120" class="mst"/><text x="305" y="92" class="w">2</text>
+  <line x1="360" y1="120" x2="440" y2="215" class="mst"/><text x="415" y="160" class="w">3</text>
+  <line x1="110" y1="90" x2="190" y2="210" class="edge"/><text x="135" y="160" class="w">4</text>
+  <line x1="190" y1="210" x2="440" y2="215" class="mst"/><text x="315" y="230" class="w">2</text>
+  <line x1="240" y1="80" x2="190" y2="210" class="edge"/><text x="205" y="150" class="w">5</text>
+  <line x1="360" y1="120" x2="190" y2="210" class="edge"/><text x="285" y="175" class="w">6</text>
+  <circle cx="110" cy="90" r="28" class="node"/><text x="110" y="90" class="txt">A</text>
+  <circle cx="240" cy="80" r="28" class="node"/><text x="240" y="80" class="txt">B</text>
+  <circle cx="360" cy="120" r="28" class="node"/><text x="360" y="120" class="txt">C</text>
+  <circle cx="190" cy="210" r="28" class="node"/><text x="190" y="210" class="txt">D</text>
+  <circle cx="440" cy="215" r="28" class="node"/><text x="440" y="215" class="txt">E</text>
+  <text x="280" y="275" class="note">Green edges form the MST</text>
+</svg>
