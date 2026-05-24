@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="250" viewBox="0 0 520 250" role="img" aria-labelledby="title desc">
+  <title id="title">Rotting oranges example</title>
+  <desc id="desc">A 3 by 3 grid showing one rotten orange spreading to fresh oranges over four minutes.</desc>
+  <defs>
+    <style>
+      .cell { fill: #fff7ed; stroke: #9a3412; stroke-width: 2; rx: 8; }
+      .empty { fill: #f3f4f6; stroke: #9ca3af; }
+      .fresh { fill: #fb923c; stroke: #c2410c; }
+      .rotten { fill: #65a30d; stroke: #3f6212; }
+      .label { font: 600 18px Arial, sans-serif; fill: #1f2937; }
+      .small { font: 14px Arial, sans-serif; fill: #4b5563; }
+      .num { font: 700 20px Arial, sans-serif; fill: #ffffff; }
+      .zero { font: 700 20px Arial, sans-serif; fill: #6b7280; }
+    </style>
+  </defs>
+  <rect width="520" height="250" fill="#ffffff"/>
+  <text x="260" y="30" text-anchor="middle" class="label">Example grid</text>
+  <text x="260" y="224" text-anchor="middle" class="small">0 = empty, 1 = fresh, 2 = rotten</text>
+  <g transform="translate(172 50)">
+    <rect x="0" y="0" width="58" height="58" class="cell rotten"/><text x="29" y="37" text-anchor="middle" class="num">2</text>
+    <rect x="58" y="0" width="58" height="58" class="cell fresh"/><text x="87" y="37" text-anchor="middle" class="num">1</text>
+    <rect x="116" y="0" width="58" height="58" class="cell fresh"/><text x="145" y="37" text-anchor="middle" class="num">1</text>
+    <rect x="0" y="58" width="58" height="58" class="cell fresh"/><text x="29" y="95" text-anchor="middle" class="num">1</text>
+    <rect x="58" y="58" width="58" height="58" class="cell fresh"/><text x="87" y="95" text-anchor="middle" class="num">1</text>
+    <rect x="116" y="58" width="58" height="58" class="cell empty"/><text x="145" y="95" text-anchor="middle" class="zero">0</text>
+    <rect x="0" y="116" width="58" height="58" class="cell empty"/><text x="29" y="153" text-anchor="middle" class="zero">0</text>
+    <rect x="58" y="116" width="58" height="58" class="cell fresh"/><text x="87" y="153" text-anchor="middle" class="num">1</text>
+    <rect x="116" y="116" width="58" height="58" class="cell fresh"/><text x="145" y="153" text-anchor="middle" class="num">1</text>
+  </g>
+</svg>
